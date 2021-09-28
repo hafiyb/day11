@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
+    <title>Piano</title>
+</head>
+<body>
+    <div id="container">
+        <h1>this is a piano</h1>
+        <p>play using your asdfghjkl keys</p>
+        <div id="piano">
+            <div class="pianokey" onclick="pianoclick(0)"> <audio class="sound" src="audio/1.mp3"></audio></div>
+            <div class="pianokey" onclick="pianoclick(1)"> <audio class="sound" src="audio/2.mp3"></audio></div>
+            <div class="pianokey" onclick="pianoclick(2)"> <audio class="sound" src="audio/3.mp3"></audio></div>
+            <div class="pianokey" onclick="pianoclick(3)"> <audio class="sound" src="audio/4.mp3"></audio></div>
+            <div class="pianokey" onclick="pianoclick(4)"> <audio class="sound" src="audio/5.mp3"></audio></div>
+            <div class="pianokey" onclick="pianoclick(5)"> <audio class="sound" src="audio/6.mp3"></audio></div>
+            <div class="pianokey" onclick="pianoclick(6)"> <audio class="sound" src="audio/7.mp3"></audio></div>
+            <div class="pianokey" onclick="pianoclick(7)"> <audio class="sound" src="audio/8.mp3"></audio></div>
+            <div class="pianokey" onclick="pianoclick(8)"> <audio class="sound" src="audio/9.mp3"></audio></div>
+        </div>
+        <p>or you can click the piano keys</p>
+        <h2 id="laser">Or preSs tHe <span id="space" onclick="pianoclick(9), rainbows()">SpaceBar</span> for LaSeRs</h2>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+<script src="script.js"></script>
+</html>

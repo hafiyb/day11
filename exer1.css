@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* #caption{
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 250px);
+    background-color: gray;
+    z-index: 2;
+} */
+
+#slider-holder{
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.slider{
+    width: 100vw;
+    height: 100%;
+    background-color: gray;
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* .slider:nth-child(1){
+    background-image: url(images/azzedine-rouichi-QYNH5L2fF9g-unsplash.jpg);
+}
+
+.slider:nth-child(2){
+    background-image: url(images/azzedine-rouichi-WegzQ1CY7eg-unsplash.jpg);
+}
+
+.slider:nth-child(3){
+    background-image: url(images/federica-galli-V-MASKSq4vI-unsplash.jpg);
+}
+
+.slider:nth-child(4){
+    background-image: url(images/toby-elliott-CaVBkPUSwM4-unsplash.jpg);
+    background-position-y: bottom;
+} */
+
+.round-button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+}
+
+.round-button i{
+    line-height: 100px;
+    transform: scale(2);
+}
+
+#button-left{
+    top: calc(50vh - 50px);
+    left: 50px;
+}
+
+#button-right{
+    top: calc(50vh - 50px);
+    left: calc(100vw - 150px);
+}

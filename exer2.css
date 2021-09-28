@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    margin: 0 auto;
+    width: 900px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#boxy{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+}
