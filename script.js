@@ -94,6 +94,37 @@ function keyPressed(e){
     }
 }
 
+setInterval(function(){
+    if(keys[65]){ //a
+        pianokey[0].style.transform = "translateY(10px)"
+    } else pianokey[0].style.transform = "translateY(0px)"
+    if(keys[83]){ //s
+        pianokey[1].style.transform = "translateY(10px)"
+    } else pianokey[1].style.transform = "translateY(0px)"
+    if(keys[68]){ //d
+        pianokey[2].style.transform = "translateY(10px)"
+    } else pianokey[2].style.transform = "translateY(0px)"
+    if(keys[70]){ //f
+        pianokey[3].style.transform = "translateY(10px)"
+    } else pianokey[3].style.transform = "translateY(0px)"
+    if(keys[71]){ //g
+        pianokey[4].style.transform = "translateY(10px)"
+    } else pianokey[4].style.transform = "translateY(0px)"
+    if(keys[72]){ //h
+        pianokey[5].style.transform = "translateY(10px)"
+    } else pianokey[5].style.transform = "translateY(0px)"
+    if(keys[74]){ //j
+        pianokey[6].style.transform = "translateY(10px)"
+    } else pianokey[6].style.transform = "translateY(0px)"
+    if(keys[75]){ //k
+        pianokey[7].style.transform = "translateY(10px)"
+    } else pianokey[7].style.transform = "translateY(0px)"
+    if(keys[76]){ //l
+        pianokey[8].style.transform = "translateY(10px)"
+    } else pianokey[8].style.transform = "translateY(0px)"
+
+},100)
+
 function pianoclick(num){
     sound[num].play()
 }
